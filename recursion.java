@@ -15,4 +15,20 @@ public class recursion{
 		}
 	}
 	
+	public static int fib(int n){
+		return fibH(n,0,1);
+    }
+	
+	private static int fibH(int n, int f1, int f2) {
+		if(n == 0) {
+			return f1;
+		}
+		if(n == 1) {
+			return f2;
+		}
+		else {
+			return fibH(n-1,f2,f1+f2);
+		}
+	}
+	
 }
