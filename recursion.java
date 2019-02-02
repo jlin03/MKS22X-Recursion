@@ -31,4 +31,20 @@ public class recursion{
 		}
 	}
 	
+	public static ArrayList<Integer> makeAllSums(int n){
+		ArrayList<Integer> out = new ArrayList<Integer>();
+		
+		
+    }
+	
+	private static void mASH(int n, int p, ArrayList<Integer> ary) {
+		if(n == 0) {
+			ary.add(p);
+		}
+		else {
+			mASH(n-1,p+n,ary);
+			mASH(n-1,p,ary);
+		}
+	}
+	
 }
