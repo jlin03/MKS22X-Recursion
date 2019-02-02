@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class recursion{
 	public static double sqrt(double n,double tolerance) {
 		return sqrtHelper(n,n/2,tolerance);
@@ -33,8 +34,8 @@ public class recursion{
 	
 	public static ArrayList<Integer> makeAllSums(int n){
 		ArrayList<Integer> out = new ArrayList<Integer>();
-		
-		
+		mASH(n,0,out);
+		return out;
     }
 	
 	private static void mASH(int n, int p, ArrayList<Integer> ary) {
